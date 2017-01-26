@@ -23,11 +23,3 @@
     ```
 
   3. Go to [localhost:9000](http://localhost:9000/)
-
-# Examples
-
- Seed database via curl:
-
-    ```
-    curl -X POST -d "{\"api\": \"21\", \"manufacturer\": \"LG\", \"model\": \"LGE\", \"msg\": \"Fatal Exception\", \"stacktrace\": \"so damn fatal\"}" http://localhost:9000/report --header "Content-Type:application/json"
-    ```
