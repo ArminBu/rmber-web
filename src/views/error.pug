@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+  .container
+    h1= error.status
+    h2= message
+    unless(error.status===403 || error.status===40)
+      pre #{error.stack}
+    
