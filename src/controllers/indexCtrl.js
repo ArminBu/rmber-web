@@ -20,6 +20,7 @@ function IndexController() {
 		});
 	};
 	this.report = function (req, res) {
+		console.log(req.body);
 		var error = new Error(req.body);
 		error.save(function (err) {
 			if (err) {
@@ -31,6 +32,7 @@ function IndexController() {
 	};
 	this.bugs = function (req, res) {
 		Error.find(function (err, bugs) {
+
 			if (err) {
 				res.render('error', {
 					title: err.status,
@@ -38,6 +40,7 @@ function IndexController() {
 					error: err
 				});
 			} else {
+				console.log(bugs);
 				res.render('bugs', {
 					title: 'Bug Reports',
 					bugsNav: true,

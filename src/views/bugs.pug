@@ -2,4 +2,18 @@ extends layout.pug
 
 block content
   .container
-    p This is the API documentation
+      table.table.table-striped
+          each bug in bugs
+            tr
+              td.col-md-8
+                dl
+                  dt API Version
+                  dl #{bug.api}
+                  dt Manufacturer
+                  dl #{bug.manufacturer}
+                  dt Device Model
+                  dl #{bug.model}
+                  dt Error Message
+                  dl #{bug.msg}
+                  dt Stacktrace
+                  dl #{bug.stacktrace}
