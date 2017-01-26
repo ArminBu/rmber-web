@@ -23,8 +23,7 @@
     ```
 
   3. Go to [localhost:9000](http://localhost:9000/)
-<<<<<<< HEAD
-=======
+  
 
 # Examples
 
@@ -33,4 +32,3 @@
 ```
 $ curl -X POST -d "{\"api\": \"21\", \"manufacturer\": \"LG\", \"model\": \"LGE\", \"msg\": \"Fatal Exception\", \"stacktrace\": \"so damn fatal\"}" http://localhost:9000/report --header "Content-Type:application/json"
 ```
->>>>>>> ca91801408a3c2f76a13a1f20b485f3ef5f5b030
