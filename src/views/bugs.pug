@@ -1,19 +1,41 @@
 extends layout.pug
 
 block content
-  .container
-      table.table.table-striped
-          each bug in bugs
-            tr
-              td.col-md-8
-                dl
-                  dt API Version
-                  dl #{bug.api}
-                  dt Manufacturer
-                  dl #{bug.manufacturer}
-                  dt Device Model
-                  dl #{bug.model}
-                  dt Error Message
-                  dl #{bug.msg}
-                  dt Stacktrace
-                  dl #{bug.stacktrace}
+    .container
+        each bug in bugs
+            table.bug-table.table.table-striped
+                tr
+                    td.col-md-1
+                        p #id:
+                    td.col-md-11
+                        p #{bug.id}
+                tr
+                    td.col-md-1
+                        p Created At:
+                    td.col-md-11
+                        p #{bug.createdAt}
+                tr
+                    td.col-md-1
+                        p API Version:
+                    td.col-md-11
+                        p  #{bug.api}
+                tr
+                    td.col-md-1
+                        p Manufacturer:
+                    td.col-md-11
+                        p  #{bug.manufacturer}
+                tr
+                    td.col-md-1
+                        p Device Model:
+                    td.col-md-11
+                        p  #{bug.model}
+                tr
+                    td.col-md-1
+                        p Error Message:
+                    td.col-md-11
+                        p  #{bug.msg}
+                tr
+                    td.col-md-1
+                        p Stacktrace:
+                    td.col-md-11
+                        p  #{bug.stacktrace}
