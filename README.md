@@ -23,6 +23,10 @@
     ```
 
   3. Go to [localhost:9000](http://localhost:9000/)
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 507702542ae9c4a00294528de5ae5bb405e75251
 
 # Examples
 

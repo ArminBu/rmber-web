@@ -1,41 +1,48 @@
 extends layout.pug
 
 block content
-    .container
+    .container-fluid
         each bug in bugs
             table.bug-table.table.table-striped
-                tr
-                    td.col-md-1
-                        p #id:
-                    td.col-md-11
-                        p #{bug.id}
-                tr
-                    td.col-md-1
-                        p Created At:
-                    td.col-md-11
-                        p #{bug.createdAt}
-                tr
-                    td.col-md-1
-                        p API Version:
-                    td.col-md-11
-                        p  #{bug.api}
-                tr
-                    td.col-md-1
-                        p Manufacturer:
-                    td.col-md-11
-                        p  #{bug.manufacturer}
-                tr
-                    td.col-md-1
-                        p Device Model:
-                    td.col-md-11
-                        p  #{bug.model}
-                tr
-                    td.col-md-1
-                        p Error Message:
-                    td.col-md-11
-                        p  #{bug.msg}
-                tr
-                    td.col-md-1
-                        p Stacktrace:
-                    td.col-md-11
-                        p  #{bug.stacktrace}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b #id:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.id}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b Date:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.createdAt}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b API Version:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.api}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b Manufacturer:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.manufacturer}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b Device Model:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.model}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b Error Message:
+                        .col-sx-12.col-sm-10.col-md-10
+                            p #{bug.msg}
+                tr.row
+                    td
+                        .col-sx-12.col-sm-2.col-md-2
+                            b Stacktrace:
+                        .col-sx-12.col-sm-10.col-md-10
+                            pre #{bug.stacktrace}
