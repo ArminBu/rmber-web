@@ -10,9 +10,6 @@ indexRouter
 	.get('/docs', function (req, res) {
 		index.docs(req, res);
 	})
-	.get('/download', function (req, res) {
-		index.download(req, res);
-	})
 	.get('/bugs', function (req, res) {
 		index.bugs(req, res);
 	})

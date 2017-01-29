@@ -13,12 +13,6 @@ function IndexController() {
 			homeNav: true
 		});
 	};
-	this.download = function (req, res) {
-		res.render('download', {
-			title: 'Download',
-			downloadNav: true
-		});
-	};
 	this.report = function (req, res) {
 		console.log(req.body);
 		var error = new Error(req.body);
@@ -28,11 +22,10 @@ function IndexController() {
 			} else {
 				res.status(200).end();
 			}
-		})
+		});
 	};
 	this.bugs = function (req, res) {
 		Error.find(function (err, bugs) {
-
 			if (err) {
 				res.render('error', {
 					title: err.status,
