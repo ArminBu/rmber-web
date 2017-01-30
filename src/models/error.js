@@ -4,23 +4,23 @@ var mongoose = require('mongoose'),
 var errorSchema = new Schema({
 	api: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	manufacturer: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	model: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	msg: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	stacktrace: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	cause: {
 		type: String,
