@@ -22,6 +22,10 @@ var errorSchema = new Schema({
 		type: String,
 		default: null
 	},
+	cause: {
+		type: String,
+		default: null
+	},
 	createdAt: {
 		type: Date,
 		default: Date.now
