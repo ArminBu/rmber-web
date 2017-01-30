@@ -24,7 +24,7 @@ var errorSchema = new Schema({
 	},
 	cause: {
 		type: String,
-		default: null
+		default: "No further details."
 	},
 	createdAt: {
 		type: Date,
